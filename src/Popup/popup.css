@@ -1,0 +1,114 @@
+.h1popup {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+  .h1popup {
+    font-size: 20px;
+  }
+}
+
+.popupContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  padding-top: 20px;
+  border-radius: 5px;
+  width: 40%;
+  background: white;
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 20px;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 770px) {
+  .popup {
+    position: absolute;
+    height: auto;
+    width: 80%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background: white;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+  }
+}
+
+.close {
+  float: right;
+  margin-right: 20px;
+  margin-top: -5px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.popupImg {
+  float: left;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+  .popupImg {
+    height: 150px;
+  }
+}
+
+.containerPopup {
+  display: flex;
+}
+
+.textPopup {
+  width: 40%;
+  margin: 0 auto;
+  line-height: 34px;
+}
+
+@media only screen and (max-width: 770px) {
+  .textPopup {
+    line-height: 25px;
+  }
+}
+
+.bornPopup {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.display {
+  display: block;
+  padding: 0 30px;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 770px) {
+  .display {
+    padding: 20px;
+    display: block;
+    padding: 0 30px;
+    line-height: 20px;
+    font-size: 12px;
+    width: 40%;
+  }
+}
+
+.linkPopup {
+  color: blue;
+  font-weight: bold;
+}
