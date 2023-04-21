@@ -1,6 +1,6 @@
-import "./styles.css";
-import React, { useState } from "react";
-import { Popup2 } from "./Popup2/popup";
+import './styles.css';
+import React, { useState } from 'react';
+import { Popup2 } from './Popup2/popup';
 
 const MATHEMATICIAN = "MATHEMATICIAN";
 const PHYSICIST = "PHYSICIST";
@@ -1501,10 +1501,8 @@ export default function App() {
   const dataArr = Object.values(data);
 
   let filtered = dataArr;
-  console.log({ filtered });
 
   let filteredTag = tags;
-  console.log({ filteredTag });
 
   if (nameFilter) {
     const fn = (o) => o.name.includes(nameFilter);
@@ -1520,10 +1518,7 @@ export default function App() {
   }
 
   if (tagFilter) {
-    // const ft = tags.map((t) => t.includes(tagFilter));
     const ft = tags.includes(tagFilter);
-
-    console.log({ ft });
   }
 
   if (centuryFilter) {
@@ -1533,17 +1528,6 @@ export default function App() {
   }
 
   tags.sort();
-
-  // tags.sort(function (a, b) {
-  //   if (a > b) {
-  //     console.log({ a: a, b: b });
-  //     return -1;
-  //   }
-  //   if (b > a) {
-  //     return 1;
-  //   }
-  //   return 0;
-  // });
 
   return (
     <>
@@ -1595,23 +1579,11 @@ export default function App() {
               return (
                 <div
                   onClick={() => {
-                    //tagsFilter = [METMATICIAN]
-                    // t = ALCHEMISTS
                     let ctagsFilter = [...tagsFilter];
 
                     if (!ctagsFilter.includes(t)) {
                       ctagsFilter.push(t);
                     } else {
-                      // 1.Find index
-                      // 2.Remove from under the index
-                      // var index = ctagsFilter.indexOf(t);
-
-                      // if (index !== -1) {
-                      //   ctagsFilter.splice(index, 1);
-                      // }
-
-                      // Filter out valus
-                      // This will remove duplicates
                       ctagsFilter = ctagsFilter.filter((tag) => t !== tag);
                     }
                     setTagsFilter(ctagsFilter);
